@@ -1,0 +1,22 @@
+<!-- blog/templates/blog/certificados.html -->
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+    <nav>
+          <a href="{% url 'inicio' %}">Inicio</a>
+    </nav>
+    <h2>
+        Certificados
+    </h2>
+        <div class="certificados">
+          <p>AWS Certified Cloud Practitioner</p>  
+          <img src="{% static 'blog/img/certificados/aws-certified-cloud-practitioner.png' %}" alt="Certificado 1" style="width:50%; max-width:180px; margin-bottom: 20px;">
+          <p>ID: 52737bb47e094dd4ae75f4f887fcfa4b</p>
+        </div>
+    <h2>
+        Cursos
+    </h2>
+        <div class="Cursos">
+         <li><a href="{% static 'blog/img/certificados/udemi1.pdf' %}" target="_blank">Curso de Python - Ver PDF</a></li>
+        </div>
+{% endblock %}

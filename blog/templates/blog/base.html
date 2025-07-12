@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Blog Personal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        body,h1,h2,h3,h4,h5,span {
+            font-family: "Raleway", sans-serif;
+            color:#00ff00; /* <-- Color blanco para todo el texto */
+            text-shadow: 1px 1px 2px black; /* <-- Sombra para mejor contraste */
+        }
+
+        body {
+                background-image: url("{% static 'blog/img/fondo.jpg' %}");
+                background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+                background-repeat: no-repeat;
+                background-attachment: fixed; /* La imagen se queda fija al hacer scroll */
+                background-position: center;
+            }
+         /* Opcional: fondo semitransparente para el contenido */
+        .contenido-transparente {
+            background-color: rgba(0, 0, 0, 0.5); /* negro con 50% de opacidad */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        a {
+            color: #00ff00; /* verde neón como en Matrix */
+        }
+
+        a:hover {
+            color: #00ff00;
+        }
+
+       
+        /* Línea divisoria verde neón */
+        ul.w3-ul > li {
+        border-bottom: 1px solid #39FF14;
+        background: transparent ;
+        transition: background 0.3s ease;
+        }
+
+        /* Hover: fondo verde translúcido tipo Matrix */
+        ul.w3-ul > li:hover {
+        background: rgba(57, 255, 20, 0.1); /* verde neón translúcido */
+    
+        }
+
+        /* Asegura que el ul también sea transparente */
+        ul.w3-ul {
+        background: transparent;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- w3-content defines a container for fixed size centered content, 
+    and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1400px">
+
+    <!-- Header -->
+    <header class="w3-container w3-center w3-padding-32"> 
+        <h1><b>MY BLOG</b></h1>
+        <p>Bienvenido a mi blog personal, en donde publicare mi desarrollo como ingeniero en TICS <span class="w3-tag"></span></p>
+    </header>
+    
+    <main>
+        {% block content %}
+            
+                
+        {% endblock %}
+    </main>
+</body>
+</html>

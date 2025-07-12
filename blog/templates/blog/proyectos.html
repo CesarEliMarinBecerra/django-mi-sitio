@@ -1,0 +1,13 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+    <nav>
+            <a href="{% url 'inicio' %}">Inicio</a>
+    </nav>
+    <h2>Proyectos</h2>
+    <ul>
+    {% for proyecto in proyectos %}
+        <li><strong>{{ proyecto.titulo }}</strong>: {{ proyecto.descripcion }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}

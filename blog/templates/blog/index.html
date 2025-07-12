@@ -1,0 +1,119 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- Grid -->
+<div class="w3-row">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+
+        <!-- Blog entry: PROYECTOS -->
+        <div class="w3-card-4 w3-margin transparente">
+            <div class="w3-container">
+                <h3><b>PROYECTOS</b></h3>
+                <h5>Descripción: <span class="w3-opacity"></span></h5>
+            </div>
+            <div class="w3-container">
+                <p>En este apartado podrás ver los proyectos en los que he trabajado.</p>
+                <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                        <p>
+                            <a href="{% url 'proyectos' %}" style="color: #39FF14;"><b>READ MORE »</b></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog entry: BLOG -->
+        <div class="w3-card-4 w3-margin transparente">
+            <div class="w3-container">
+                <h3><b>BLOG</b></h3>
+                <h5>Publicaciones de lo que hago relacionado a mi desarrollo profesional y personal</h5>
+            </div>
+            <div class="w3-container">
+                <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                        <p>
+                            <a href="{% url 'blog' %}" style="color: #39FF14;"><b>READ MORE »</b></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certificados -->
+        <div class="w3-card w3-margin transparente">
+            <div class="w3-container w3-padding">
+                <h4>
+                    <a href="{% url 'certificados' %}" style="color: #39FF14;"><b>Certificados y cursos</b></a>
+                </h4>
+            </div>
+        </div>
+
+    </div> <!-- Fin columna principal -->
+
+    <!-- Introduction menu -->
+    <div class="w3-col l4">
+
+        <!-- Sobre mí -->
+        <div class="w3-card w3-margin w3-margin-top transparente">
+            <div class="w3-container transparente">
+                <h4><b>¿Quién soy?</b></h4>
+                <p>Hola, mi nombre es Cesar Eli. Soy un recién graduado de la carrera de TICS en la Universidad Tecnológica de Morelia.</p>
+                <p><a href="{% url 'sobre_mi' %}" style="color: #39FF14;"><b>READ MORE »</b></a></p>
+            </div>
+        </div>
+
+        <!-- Contactos -->
+        <div class="w3-card w3-margin transparente">
+                <div class="w3-container w3-padding">
+                    <h4>Contactos</h4>
+                </div>
+                <ul class="w3-ul transparente">
+                    <li class="w3-padding-16 transparente">
+                        <img src="{% static 'blog/img/cvverde.png' %}" alt="CV" class="w3-left w3-margin-right" style="width:40px">
+                        <a href=""><span class="w3-large" style="color: #39FF14;">CV</span></a>
+                    </li>
+                    <li class="w3-padding-16 transparente">
+                        <img src="{% static 'blog/img/gmailverde.png' %}" alt="Gmail" class="w3-left w3-margin-right" style="width:40px">
+                        <span class="w3-large" style="color: #39FF14;">Gmail</span><br>
+                        <span style="color: #39FF14;">cesarelimarinb@gmail.com</span>
+                    </li>
+                    <li class="w3-padding-16 transparente">
+                        <img src="{% static 'blog/img/githubverde.png' %}" alt="GitHub" class="w3-left w3-margin-right" style="width:40px">
+                        <a href="https://github.com/CesarEliMarinBecerra" target="_blank"><span class="w3-large" style="color: #39FF14;">GitHub</span></a>
+                    </li>
+                    <li class="w3-padding-16 w3-hide-medium w3-hide-small transparente">
+                        <img src="{% static 'blog/img/linkedinverde.png' %}" alt="LinkedIn" class="w3-left w3-margin-right" style="width:40px">
+                        <a href="https://www.linkedin.com/in/cesar-eli-marín-becerra-60276b209/" target="_blank"><span class="w3-large" style="color: #39FF14;">LinkedIn</span></a>
+                    </li>
+                </ul>
+            </div>
+
+
+        <!-- Skills -->
+        <div class="w3-card w3-margin transparente">
+            <div class="w3-container w3-padding">
+                <h4>Skills:</h4>
+            </div>
+            <div class="w3-container transparente">
+                <p>
+                    <span class="w3-tag w3-margin-bottom" style="background: transparent; color: #39ff14;">Python - Intermedio</span>
+                    <span class="w3-tag w3-margin-bottom" style="background: transparent; color: #39ff14;">Django - Básico</span>
+                    <span class="w3-tag w3-margin-bottom" style="background: transparent; color: #39ff14;">Linux - Intermedio</span>
+                    <span class="w3-tag w3-margin-bottom" style="background: transparent; color: #39ff14;">Terraform - Básico</span>
+                </p>
+            </div>
+        </div>
+
+    </div> <!-- Fin columna lateral -->
+
+</div> <!-- Fin grid -->
+
+<br>
+
+
+{% endblock %}
