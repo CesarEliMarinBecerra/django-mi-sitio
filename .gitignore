@@ -1,7 +1,22 @@
+# Entornos virtuales (por si alguien lo crea dentro del proyecto)
 venv/
+env/
+mi_entorno/
+
+# Archivos de Python
 __pycache__/
-*.pyc
+*.py[cod]
+
+# Base de datos SQLite (base de datos local)
 *.sqlite3
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de logs
+*.log
+
+# Archivos de configuración sensible
 .env
-/staticfiles/
-/media/
+
