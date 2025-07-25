@@ -1,0 +1,40 @@
+Watching for file changes with StatReloader
+[19/Jul/2025 19:31:29] "GET / HTTP/1.1" 200 7457
+[19/Jul/2025 19:31:29] "GET /static/blog/img/cvverde.png HTTP/1.1" 200 554
+[19/Jul/2025 19:31:29] "GET /static/blog/img/gmailverde.png HTTP/1.1" 200 1077
+[19/Jul/2025 19:31:30] "GET /static/blog/img/linkedinverde.png HTTP/1.1" 200 826
+[19/Jul/2025 19:31:30] "GET /static/blog/img/githubverde.png HTTP/1.1" 200 1995
+[19/Jul/2025 19:31:30] "GET /static/blog/img/fondo.jpg HTTP/1.1" 200 896665
+[19/Jul/2025 19:31:41] "GET / HTTP/1.1" 200 7457
+[19/Jul/2025 19:31:44] "GET / HTTP/1.1" 200 7457
+[19/Jul/2025 19:31:46] "GET / HTTP/1.1" 200 7457
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 19, 2025 - 19:28:25
+Django version 5.2.4, using settings 'mi_portafolio.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+Watching for file changes with StatReloader
+[21/Jul/2025 16:37:56] "GET /blog/ HTTP/1.1" 200 3073
+Not Found: /favicon.ico
+[21/Jul/2025 16:37:58] "GET /favicon.ico HTTP/1.1" 404 3501
+[21/Jul/2025 16:37:58] "GET /static/blog/img/fondo.jpg HTTP/1.1" 200 896665
+[21/Jul/2025 16:38:10] "GET / HTTP/1.1" 200 7457
+[21/Jul/2025 16:38:11] "GET /static/blog/img/gmailverde.png HTTP/1.1" 200 1077
+[21/Jul/2025 16:38:11] "GET /static/blog/img/cvverde.png HTTP/1.1" 200 554
+[21/Jul/2025 16:38:11] "GET /static/blog/img/githubverde.png HTTP/1.1" 200 1995
+[21/Jul/2025 16:38:11] "GET /static/blog/img/linkedinverde.png HTTP/1.1" 200 826
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 21, 2025 - 16:30:30
+Django version 5.2.4, using settings 'mi_portafolio.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
