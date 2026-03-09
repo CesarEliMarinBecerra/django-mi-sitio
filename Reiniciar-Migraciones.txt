@@ -1,0 +1,18 @@
+# borrar base de datos
+rm db.sqlite3
+
+# borrar migraciones de la app (excepto __init__.py)
+rm blog/migrations/0*.py
+
+# crear migraciones nuevas
+python manage.py makemigrations
+
+# aplicarlas a la base de datos
+python manage.py migrate
+
+# (opcional) crear usuario admin
+python manage.py createsuperuser
+
+# ejecutar servidor
+python manage.py runserver
+
