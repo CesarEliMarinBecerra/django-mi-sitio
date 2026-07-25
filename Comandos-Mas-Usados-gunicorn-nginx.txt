@@ -1,0 +1,14 @@
+# Ver si Gunicorn está activo
+sudo systemctl status mi_portafolio
+
+# Ver si Nginx está activo
+sudo systemctl status nginx
+
+# Ver quién usa el puerto 8000 o otro puerto
+sudo lsof -i :8000
+
+# Probar Gunicorn directamente
+curl http://127.0.0.1:8000
+
+# Probar Nginx
+curl http://localhost

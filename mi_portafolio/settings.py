@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-$6!s7-+2yaa78zj#vth*xmzqwm%t)9kkle9dk3frm@gaj#hvl1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'blog',
 ]
 
+#Filtros de seguridad 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -66,7 +67,7 @@ TEMPLATES = [
         },
     },
 ]
-
+#Configuracion relacionada a Gunicorn
 WSGI_APPLICATION = 'mi_portafolio.wsgi.application'
 
 
